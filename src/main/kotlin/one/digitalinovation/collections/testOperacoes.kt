@@ -15,5 +15,17 @@ fun main(){
     salariosMaiorQue2500.forEach {
         println(it)
     }
+    println("__________________")
+    println(salarios.count {it in 1000.0..5000.0})
+    println(salarios.count {it in 1100.0..5000.0})
+    println("__________________")
+    println(salarios.find {it == 5000.0})
+    println(salarios.find {it == 500.0})
+    println("__________________")
+    println(salarios.any {it == 1000.0})
+    println(salarios.any {it == 500.0})
+
+
+
 
 }
